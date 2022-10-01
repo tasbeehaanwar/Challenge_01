@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge #1 for Web Development Course students | Forms</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background-color: rgba(137, 43, 226, 0.264);
+        margin: 5px;
+        border: 2px solid rgb(164, 56, 164);
+      }
+      .main {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 2px;
+        font-size: 20px;
+      }
+
+      /* selevting all input tags */
+      input[type="text"],
+      input[type="textarea"],
+      input[type="email"],
+      input[type="number"],
+      input[type="file"],
+      select,
+      textarea {
+        border: 2px solid plum;
+        margin: auto 5px 5px;
+        width: 70%;
+        padding: 10px;
+        border-radius: 7px;
+        font-size: 16px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: rgba(167, 15, 126, 0.259);
+      }
+
+      label{
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="noaction">
+      <div class="container">
+        <!-- Form Tag Starts Now! -->
+        <div class="main">
+          <h2>Guest Registration Form</h2>
+          <p>
+            Welcome to Moya Safari Villa, please fill out the details below in
+            order for us to check you in
+          </p>
+        </div>
+        <h3>Primary Guest Details</h3>
+        <!-- Name -->
+        <div class="name">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value=""
+            placeholder="Enter you name"
+          />
+        </div>
+        <!-- Email -->
+        <div class="email">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="tehseen@gmail.com"
+          />
+        </div>
+        <!-- Passport or Identity Number -->
+        <div class="Identity">
+          <label for="Identity">Passport or Identity Number</label><br />
+          <input
+            type="number"
+            name="Identity"
+            id="Identity"
+            value=""
+            placeholder="1234..."
+          />
+        </div>
+        <!-- Address-->
+        <div class="address">
+          <label for="address">Address</label><br />
+          <textarea
+            name="address"
+            value=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <!-- State-->
+        <div class="address">
+          <label for="state">State/Province</label><br />
+          <input type="text" name="state" id="state" value="" />
+        </div>
+        <!-- Nationality-->
+        <div class="address">
+          <label for="nationality">Nationality</label><br />
+          <select name="nationality" id="nationality">
+            <option value="">--Select Nationality--</option>
+            <option value="">Pakistani</option>
+            <option value="">United States</option>
+            <option value="">Afghanistan</option>
+          </select>
+        </div>
+        <!-- Photo-->
+        <div class="Photo">
+          <label for="address">Photo</label><br />
+          <input type="file" name="Photo" id="Photo" value="" />
+        </div>
+        <!-- Submit-->
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
